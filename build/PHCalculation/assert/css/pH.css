@@ -1,0 +1,380 @@
+select {
+	width: 126px;
+}
+#fomulabtn {
+	margin: 1em 11em;
+	position: relative;
+}
+.sample {
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #EEEEEE));
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	border: 1px solid #AAAAAA;
+	height: 2.4em;
+	margin: -2em 10.5em;
+	width: 10.4em;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+}
+input {
+	background: none;
+	border: 1px solid #C5C5C5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 0 3px #AAAAAA;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+	height: 1.8em;
+	margin: 0.4em 10.7em;
+	padding-bottom: 9px;
+	width: 155px;
+}
+.levels {//
+	border: 1px solid red;
+	float: left;
+	height: 37.5em;
+	margin: 1em 0.3em;
+	width: 48em;
+}
+h3 {
+	color: #19292E;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 16pt;
+	font-weight: normal;
+	margin: 0.5em 1em;
+}
+h6 {
+	font-size: 12pt;
+}
+.h6 {
+	color: #19292E;
+	font-family: myFirstFont;
+	font-weight: normal;
+	margin: 0.5em 1em;
+}
+.diagram1 {
+	//border: 1px solid black;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 35em;
+	margin-top: 1em;
+	width: 26em;
+}
+.console {//
+	border: 1px solid blue;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 17em;
+	margin: -2em 0em;
+	width: 26em;
+	overflow-y: auto;
+}
+.controlPanel {//
+	border: 1px solid green;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 35em;
+	margin: -35.5em 26.6em;
+	width: 21em;
+}
+.input-value h4 {
+	color: #E9E9E9;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.input-value {
+	color: #1E1E1E;
+	float: right;
+	font: 10px 'Segoe UI', Arial, sans-serif;
+	height: 170px;
+	margin: 25px 43px;
+	width: 228px;
+}
+#bluebtn {
+	style="margin-left: 19px;"
+}
+#bluebtn1{
+	margin-left: 2em;
+}
+#bluebtn2{
+	margin: 1em 5em;
+}
+#plotTemp1{
+	margin: 1em 2.3em;
+}
+#plotTemp{
+	margin: 1em 2.3em;
+}
+#jxgbox_gphtwo{
+	width:770px;
+	 height:500px;
+	 z-index: 999999;
+}
+label {
+	color: #464E52;
+	font-size: 11pt;//
+	float: left;
+	font-family: myFirstFont;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-left: 1em;
+	word-wrap: break-word;
+}
+.selectBox {
+	float: left;
+	margin: -1.6em 8.5em;
+	left: 33px;
+}
+
+.plot {
+	float: left;
+	margin: 0em 1.3em;
+}
+.show {
+	//border: 1px solid black;
+	font-family: myFirstFont;
+	letter-spacing: 0.03em;
+	color: #5F9EA0;
+    float: left;
+    height: 1.5em;
+    left: 1em;
+    position: relative;
+    top: -1.5em;
+    width: 18em;
+}
+.submit {
+	float: right;
+	margin: 4em 8.7em;
+}
+.nextSet {
+	float: left;
+	margin: 1em 2em;
+}
+.nextLevel {
+	float: left;
+	margin: -2.7em 21em;
+	width: 88px;
+}
+.refresh {
+	float: left;
+	margin-left: 19px;
+	margin: 0em 1em;
+}
+#Gettemp {
+	float: left;
+	margin: 7em 1.8em;
+	position: relative;
+}
+#Temperature {
+	color: #5F9EA0;
+	//border: 1px solid #EDEDED;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 16px;
+	height: 1.5em;
+	letter-spacing: 0.03em;
+	margin:-6.5em 13.5em;
+	width: 7em;
+}
+.inputtext {
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid #C5C5C5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 0 3px #AAAAAA;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+	height: 1.8em;
+	margin: -2em 11.8em;
+	padding-bottom: 9px;
+	width: 125px;
+}
+#measurementLevel{
+	margin-left: 235px; 
+	margin-top: -30px;
+}
+#measurementLevel1{
+	margin-left: 230px;
+    margin-top: -34px;
+	border-left-width: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#plotCalibration1{
+	border-left-width: 1px; 
+	margin-left: 15px; 
+	margin-top: 0px; 
+	padding-left: 25px; 
+	padding-right: 25px;
+}
+.inputtext1 {
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid #C5C5C5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 0 3px #AAAAAA;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+	height: 1.8em;
+	margin: -2em 14.8em;
+	margin-top: -40px;
+	padding-bottom: 9px;
+	width: 125px;
+}
+#submitCont {
+	margin: -3.8em 16.2em
+}
+.link {
+	color: #3788AC;
+	cursor: pointer;
+	line-height: 1;
+	left:18em;
+	top:-1em;
+	opacity: 0.8;
+	position: relative;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+	opacity: 1;
+}
+
+.phTable {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height:20%;
+	border: 1px solid #ffffff;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.phTable table {
+	width: 91%;
+	height: 20%;
+	margin: 1em;
+	padding: 0px;
+}
+#sample1{
+	height: 20%;
+    margin: 1em;
+    padding: 0;
+    width: 180px;
+}
+#output1{
+	height: 20%;
+    margin-left: 177px;
+    margin-top: -38px;
+    width: 135px;
+}
+.phTable tr:last-child td:last-child {
+
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.phTable table tr:first-child td:first-child {
+
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.phTable table tr:first-child td:last-child {
+
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.phTable tr:last-child td:first-child {
+
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.phTable tr:hover td {
+
+	background-color: #e5e5e5;
+}
+.phTable td {
+	vertical-align: middle;
+	background: -o-linear-gradient(bottom, #ffffff 5%, #e5e5e5 100%);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #e5e5e5) );
+	background: -moz-linear-gradient( center top, #ffffff 5%, #e5e5e5 100% );
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e5e5e5");
+	background: -o-linear-gradient(top,#ffffff,e5e5e5);
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	border-width: 0px 1px 1px 0px;
+	text-align: center;
+	padding: 11px;
+	font-size: 10px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+}
+.phTable tr:last-child td {
+
+	border-width: 0px 1px 0px 0px;
+}
+.phTable tr td:last-child {
+
+	border-width: 0px 0px 1px 0px;
+}
+.phTable tr:last-child td:last-child {
+
+	border-width: 0px 0px 0px 0px;
+}
+.phTable tr:first-child td {
+
+	background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");
+	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+	background-color: #cccccc;
+	border: 0px solid #ffffff;
+	text-align: center;
+	border-width: 0px 0px 1px 1px;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000000;
+}
+.phTable tr:first-child:hover td {
+
+	background: -o-linear-gradient(bottom, #cccccc 5%, #b2b2b2 100%);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #b2b2b2) );
+	background: -moz-linear-gradient( center top, #cccccc 5%, #b2b2b2 100% );
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#b2b2b2");
+	background: -o-linear-gradient(top,#cccccc,b2b2b2);
+	background-color: #cccccc;
+}
+.phTable tr:first-child td:first-child {
+
+	border-width: 0px 0px 1px 0px;
+}
+.phTable tr:first-child td:last-child {
+
+	border-width: 0px 0px 1px 1px;
+}
+@font-face{
+	font-family:myFirstFont;
+	src: url('DroidSerif-Regular.ttf'); /* IE9 */
+}

@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+}
+#tabs{
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1335px;
+}
+#diagram{
+	position: relative;
+}
+#calculation{    
+    height: 521px;
+    left: 815px;
+    position: absolute;
+    top: 143px;
+    width: 528px;
+}
+#fieldset1{
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	margin-bottom: 1px;
+	padding-bottom: 2px;
+	 margin-top: 11px;
+	border:none;
+}
+#fieldset1 label{
+	margin-left: 15px;
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 3px;
+}
+#fieldset1 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	font: 15px Georgia,"Times New Roman",Times,serif;
+	margin-bottom: 0px;
+	padding: 5px;
+	width: 120px;
+	margin-top:5px;
+}
+.input_label{
+	margin-left: 17px;
+}
+#fieldset2{
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	border:none;
+	font-size: 14px;
+}
+#fieldset2 button{
+	margin-left: 20px;
+}
+#button2{
+	
+}
+#button_set{
+	height: 271px;
+	margin-left: 812px;
+	position: absolute;
+	top: 391px;
+	width: 528px;
+}
+#textbox1{
+	margin-left: 51px;
+}
+#textbox2{
+	margin-left: 53px;
+}
+#textbox3{
+	margin-left: 58px;
+}
+#textbox4{
+	margin-left: 54px;
+}
+#textbox5{
+	margin-left: 56px;
+}
+#textbox6{
+	margin-left: 1px;
+}	
+#button1{
+	margin-left: 20px;
+}
+#textbox7{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	font: 15px Georgia,"Times New Roman",Times,serif;
+	margin-left: 123px;
+	width: 120px;
+	padding:5px;
+}
+#oscil{
+	height: 40px;
+	left: 505px;
+	position: absolute;
+	top: 130px;
+	width: 70px;
+	color:white;
+	font-size:30px;
+}
+#timer{
+	height: 45px;
+    left: 690px;
+    position: absolute;
+    top: 135px;
+    width: 90px;
+	color:white;
+	font-size:25px;
+}
+#period{
+	height: 45px;
+    left: 687px;
+    position: absolute;
+    top: 245px;
+    width: 90px;
+	color:white;
+	font-size:25px;
+}	
+#JFormula{
+	margin-bottom: 13px;
+	width: 250px;
+	margin-left: 20px;
+}
+#JoFormula{
+	margin-top:10px;
+	width:129px;
+	margin-left: 20px;  
+}
+	
+	

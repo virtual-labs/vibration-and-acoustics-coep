@@ -1,0 +1,180 @@
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <title>Harmonic Excitation - Mechanical</title>
+        <link type="text/css" rel="stylesheet" href="css/jsxgraph.css" />
+        <link type="text/css" href="../css/jquery-ui-1.8.13.custom.css" rel="stylesheet"/>
+        <link type="text/css" rel="stylesheet" href="css/SMD.css" />
+        <link type="text/css" rel="stylesheet" href="css/gstyle_buttons.css" />
+        <link type="text/css" href="../css/common.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="../lib/jquery-ui-1.8.13.custom.min.js"></script>
+        <script type="text/javascript" src="../lib/jsxgraphcore.js"></script>
+        <script type="text/javascript" src="js/raphael.js"></script>
+        <script type="text/javascript" src="js/raphaelDiagram.js"></script>
+        <script type="text/javascript" src="js/jQueryOperations.js"></script>
+        <script>
+            $(function () {
+                $("#tabs").tabs();
+                if ($.browser.msie) {
+                    document.write("The Existing version of Internet Explorer is not supported ");
+                    document.write("<A href  = 'http://www.mozilla.com/en-US/products/download.html'>Click on the  Link :</A>");
+                }
+                diagram();
+                createGraph1();
+                createGraph2();
+            });
+        </script>
+        <script>
+            // This adds 'placeholder' to the items listed in the jQuery .support object. 
+            jQuery(function () {
+                jQuery.support.placeholder = false;
+                test = document.createElement('input');
+                if ('placeholder' in test) jQuery.support.placeholder = true;
+            });
+            // This adds placeholder support to browsers that wouldn't otherwise support it. 
+            $(function () {
+                if (!$.support.placeholder) {
+                    var active = document.activeElement;
+                    $(':text').focus(function () {
+                        if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+                            $(this).val('').removeClass('hasPlaceholder');
+                        }
+                    }).blur(function () {
+                        if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+                            $(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+                        }
+                    });
+                    $(':text').blur();
+                    $(active).focus();
+                    $('form:eq(0)').submit(function () {
+                        $(':text.hasPlaceholder').val('');
+                    });
+                }
+            });
+        </script>
+        <style>
+            .hasPlaceholder {
+                color: #777;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="tabs">
+            <div class="imag">
+                <img src="../images/coep_logo_sim.png">
+               <!--<a href="../../../logout.htm"><img id="logout" src="../../images/logout.png"></a>-->
+            </div>
+            <ul>
+                <h3 align="left" style = "margin-left: 5px;margin-top: 30px;">Forced Response of SDOF system : Harmonic Excitation</h3>
+            </ul>
+            <div id="tabs-1">
+                <div id="diagram">
+                    <div id="omegaDisplayLabel">&omega; :</div>
+                    <div id="omegaDisplayValue"></div>
+					<button class = "action greenbtn" id="Showf" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">GET FORMULA</span></button>
+					<button class = "action greenbtn" id="reload" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">Reload</span></button>
+                </div>
+                <div id="uservalues">
+                    <fieldset id = "fs1">
+                        <legend align= "center">Control Panel</legend>
+						<p>
+                        <label for = "m">
+                            <font size="2">Mass, M</font>
+                        </label>
+                        <input type="text" size="16" id="m" placeholder="from 50  to 100">kg
+                        </p>
+						<p>
+                        <label for = "k">
+                            <font size="2">Stiffness, K</font>
+                        </label>
+                        <input type="text" size="16" id="k" placeholder="20000 to 100000 ">N/m
+                        </p>
+						<p>
+						<button class = "action redbtn"  onClick="calcCc();" id="Ccval" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">Click here for Cc</span></button>
+                        <input type="text" disabled="disabled" size="16" id="cc" />N.s/m
+                        </p>
+                        <p>
+                        <label for = "c">
+                            <font size="2">Damping Coeff, C</font>
+                        </label>
+                        <input type="text" size="16" id="c" placeholder="1000 to 2500">N.s/m
+                        </p>
+						<p>
+                        <label for = "f">
+                            <font size="2">Force Amplitude , F<sub>0</sub>
+                            </font>
+                        </label>
+                        <input type="text" size="16" id="f" placeholder="100 to 1000">N
+                        </p>
+						<p>
+                        <button class = "action redbtn"  onClick="calculateomega();" id="omegan" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">Click here for &omega;<sub>n</sub></span></button>
+                        <input type="text" size="16" id="omeganVal" value ="" disabled="true"/>rad/s
+                        </p>
+						</div>
+						</fieldset>
+						<div id = "omegaGen">
+						<fieldset id = "fs2">
+						<p>
+                        <label for= "omega1">&omega;<sub>1</sub>
+                        </label>
+                        <input type= "text" id = "omega1" size ="6" >
+						
+                        <label for= "omega2">&omega;<sub>2</sub>
+                        </label>
+                        <input type= "text" id = "omega2" size ="6" >
+                       
+                        <button class = "action bluebtn" id="run" onClick="calculate();" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">RUN</span></button></p>
+                </div>
+				</fieldset>
+                </fieldset>
+                <div id="displayvalues">
+				<fieldset>
+                    <!--<h4 id="conpan">Constant Values</h4>-->
+                    <label for ="xstVal">Static Deflection, x<sub>st</sub>=F<sub>0</sub>/k</label>
+                    
+                               <div id="xstVal"></div><span> m</span>
+                   
+                    <div id="zetal" style="padding-left: 25px">
+                    	<div id="displayvalues1"><label>Damping factor, &zeta;</label></div>
+
+                    </div>
+                    <div id="zetaVal"></div>
+					</fieldset>
+                                 </div>
+				
+
+                <div id="graph1">
+                    <div id="graphHE1" class="jxgbox"></div>
+                </div>
+                <div id="graph2">
+                    <div id="graphHE2" class="jxgbox"></div>
+                </div>
+                <div id="note"></div>
+                <div id="Formula1" title="Please check values" ></div>
+                <div id="Formula" title="Formula" ></div>
+				
+       
+		<div style="position:absolute; top:706px; width:1340px;margin:0 auto;">
+		<div class="art-footer">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body1">
+                    <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+                  
+                    <div class="art-footer-text art-footer-psr">
+                                <p><a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a></p><p>Copyright &#169;2011.COEP Virtual Lab.</p>
+                                                            </div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+		</div>	 
+	</div>		
+	
+    </body>
+
+</html>

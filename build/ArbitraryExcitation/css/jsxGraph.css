@@ -1,0 +1,36 @@
+.jxgbox {
+	position: relative; /* for IE 7 */
+	overflow: hidden;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #356AA0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.JXGtext {
+	background-color: transparent;
+	font-family: Arial, Helvetica, Geneva;
+	padding: 0px;
+	margin: 0px;
+}
+.navbar {
+	color: #aaaaaa;
+	background-color: #f5f5f5;
+	padding: 2px;
+	position: absolute;
+	font-size: 10px;
+	cursor: pointer;
+	z-index: 100;
+	right: 5px;
+	bottom: 5px;
+}
+#graph_jxgBoard_infobox {
+	background-color: black;
+}
+.JXGinfobox {
+	background-color: black;
+}
+.jxgbox {
+	position: relative;
+}

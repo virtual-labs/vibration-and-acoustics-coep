@@ -1,0 +1,211 @@
+select {
+	width: 126px;
+}
+.sample {
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #EEEEEE));
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
+	border: 1px solid #AAAAAA;
+	height: 2.4em;
+	margin: -2em 10.5em;
+	width: 10.4em;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+}
+input {
+	background: none;
+	border: 1px solid #C5C5C5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 0 3px #AAAAAA;
+	color: #404C4F;
+	float: left;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+	height: 1.8em;
+	margin: 0.4em 10.7em;
+	padding-bottom: 9px;
+	width: 155px;
+}
+.levels {//
+	border: 1px solid red;
+	float: left;
+	height: 37.5em;
+	margin: 1em 0.3em;
+	width: 48em;
+}
+.for {
+	margin: 1em 11em;
+	position: relative;
+	width: auto;
+}
+h3 {
+	color: #19292E;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 16pt;
+	font-weight: normal;
+	margin: 0.5em 1em;
+}
+.h6 {
+	color: #19292E;
+	font-family: myFirstFont;
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 0.5em 1em;
+}
+.diagram1 {//
+	border: 1px solid black;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 15em;
+	margin-top: 1em;
+	width: 26em;
+}
+.console {//
+	border: 1px solid blue;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 17em;
+	margin: -2em 0em;
+	width: 26em;
+	overflow-y: auto;
+}
+.controlPanel {//
+	border: 1px solid green;
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	float: left;
+	height: 35em;
+	margin: -15.5em 26.6em;
+	width: 21em;
+}
+h4 {
+	color: #E9E9E9;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.input-value {
+	border: 3px double #EDEDED;
+	border-radius: 10px 10px 10px 10px;
+	color: #1E1E1E;
+	float: right;
+	height: 170px;
+	margin: 25px 43px;
+	width: 228px;
+}
+label {
+	color: #464E52;//
+	float: left;
+	font-family: myFirstFont;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-left: 1em;
+	word-wrap: break-word;
+/*	text-decoration: blink;*/
+}
+
+p {
+	color: #464Eee;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin-left: 1em;
+	word-wrap: break-word;
+	text-decoration: blink;
+}
+.selectBox {
+	float: left;
+	margin: -1.6em 7.5em;
+}
+.plot {
+	float: left;
+	margin: 1em 2em;
+}
+.submit {
+	float: right;
+	margin: 1em 2.4em;
+}
+.nextSet {
+	float: left;
+	margin: 1em 2em;
+}
+.nextLevel {
+	float: left;
+	margin: 1em 2em;
+}
+.refresh {
+	float: left;
+	margin: 1em 2em;
+}
+#Gettemp {
+	float: left;
+	margin: 1em 1.8em;
+	position: relative;
+}
+#Temperature {
+	color: #5F9EA0;//
+	border: 1px solid #EDEDED;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 16px;
+	height: 1.5em;
+	letter-spacing: 0.03em;
+	margin: -2.1em 13.5em;
+	width: 7em;
+}
+.inputtext {
+	width: 75px;
+	float: left;
+	margin: -2em 15.7em;
+	background: none;
+	border: 1px solid #C5C5C5;
+	border-radius: 1px 1px 1px 1px;
+	box-shadow: 0 0 3px #AAAAAA;
+	color: #404C4F;
+	font: 76.25%/2em arial, helvetica, sans-serif;
+	height: 1.8em;
+	padding-bottom: 9px;
+}
+#submitCont {
+	margin: -3.8em 16.2em
+}
+.link {
+	color: #3788AC;
+	cursor: pointer;
+	float: right;
+	line-height: 1;
+	margin: -1em 0em 0em 3em;
+	opacity: 0.8;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+	opacity: 1;
+}
+#DEN {
+	color: #E9E9E9;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#EW {
+	color: #E9E9E9;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#PPM {
+	color: #E9E9E9;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url('DroidSerif-Regular.ttf'); /* IE9 */
+}

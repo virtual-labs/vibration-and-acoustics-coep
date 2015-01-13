@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>orifice</title>
+		<script src="../assert/lib/jquery-1.6.2.min.js"></script>
+		<script src="../assert/lib/raphael-2.1.js"></script>
+		<script src="../assert/lib/highcharts.js"></script>
+		<script src="../assert/lib/highcharts.src.js"></script>
+		<script src="../assert/lib/jquery.simplemodal.js"></script>
+		<script src="../assert/lib/exporting.js"></script>
+		<script src="../assert/lib/jquery.confirm.js"></script>
+		<script src="../assert/lib/grid.js"></script>
+		<script src="../assert/lib/jquery-ui-1.8.20.custom.js"></script>
+		<script src="../assert/lib/chosen.jquery.min.js"></script>
+		<link rel="stylesheet" href="../assert/css/layout.css" />
+		<link rel="stylesheet" href="assert/css/orifice.css" />
+		<link rel="stylesheet" href="../assert/css/chosen.css" />
+		<link rel="stylesheet" href="../assert/css/gstyle_buttons.css" />
+		<link rel="stylesheet" href="../assert/css/jquery.confirm.css" />
+		<link rel="stylesheet" href="../assert/css/jquery-ui-1.8.20.custom.css">
+		<link rel="stylesheet" href="../assert/css/model.css">
+	</head>
+	<body>
+		<article class = "main">
+			<header>
+				<span class="a2network">Sensor Analysis Laboratory</span>
+				<h2 class="h2" >ORIFICE</h2>
+			</header>
+			<div class = "logo">
+				<div class = "circle">
+					<img src="../assert/images/coep_logo.png"/>
+				</div>
+			</div>
+			<hr>
+			
+			<section class="container4" >
+				<div id="canvas_container" class="canvas">
+					<!--<h3 style="margin-left: -28em">Measurement level</h3>-->
+				</div>
+				<div id ="canvas_tapping"  class="canvas disp" ></div>
+				<div class="controlpanel">
+					<!--Calibration level-->
+					<div id="measurementLevel">
+						<div id="measurement_controlpanel1"  class="controlpanel cntrl">
+							<h4>Level-1</h4>
+							<label>Configure System:</label>
+							<br />
+							<label for="betaMeasurement">&#946; : </label>
+							<div class="selectBox">
+								<select id="betaMeasurement">
+									<option value = 0>--Select--</option>
+									<option value = 0.4> 0.4</option>
+									<option value = 0.5> 0.5</option>
+									<option value = 0.6> 0.6 </option>
+									<option value = 0.7> 0.7 </option>
+									<option value = 0.8> 0.8 </option>
+								</select>
+							</div>
+							<label for = "dMeasurement"> D :</label>
+							<div class="selectBox">
+								<select id="dMeasurement">
+									<option value = 0>--Select--</option>
+									<option value = '25'> 25mm </option>
+									<option value = '40'> 40mm </option>
+									<option value = '50'> 50mm </option>
+								</select>
+							</div>
+							<br />
+							<br />
+							<button class="action" id="configMeasurement" disabled='true'>
+								<span class="label">Configure</span>
+							</button>
+						</div><!--Control panel 1 Measurement Level-->
+						<div id="measurement_controlpanel2"  class="controlpanel cntrl disp">
+							<h4>Level-1</h4>
+							<h4 >Control Panel:</h4>
+							<br />
+							<label For= "Q"  class="Q">Q : </label>
+							<div class="slider slide" id="Slider"></div>
+							<input type = 'text'  id = 'lpm'  class="inLpm" readonly="readonly"/>
+							<label class="lpm">lph</label>
+							<button class="action greenbtn cd" id="cdMeasurement">
+								<span class="label">Show C<sub>d</sub></span>
+							</button>
+							<div class="cdVal"  id = 'showCd'></div>
+							<label for='UserInput1' class="user">User Input &Delta;P(mmWC):</label>
+							<input type = 'text'  id = 'UserInput1' class="userInput" onclick="this.value='';"/>
+							<button id="submitMeasure" class="submit">
+								<span class="label">Submit</span>
+							</button>
+							<button id="plotMeasure1" class="plot1">
+								<span class="label">Plot</span>
+							</button>
+							<button id="plotMeasure" class="plot" disabled=true>
+								<span class="label">Plot</span>
+							</button>
+							<button class="bluebtn nextlevel" id="bluebtnL-1" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+							<button id="NextSet" class="nextSet" disabled=true>
+								<span class="label">Next Set of Values</span>
+							</button>
+							<button id="level-2" class="nextlevel" disabled=true>
+								<span class="label">Level-2</span>
+							</button>
+						</div>
+					</div>
+					<!--Service level-->
+					<div id="serviceLevel" class="disp">
+						<div id="service_controlpanel1"  class="controlpanel cntrl">
+							<h4>Level-2</h4>
+							<label>Configuration:</label>
+							<label class="link" id='link-1'><--Level-1</label>
+							<br />
+							<label>&#946; :</label>
+							<div class="beta"></div>
+							<label class="dmeasure">D :</label>
+							<div class="d"></div>
+							<label for = "service" style="margin:2em 10.4em;"> Service :</label>
+							<div class="selectBox" style="margin: 1.4em -8.6em;">
+								<select id="service">
+									<option >--Select--</option>
+									<option > Dilute HCL </option>
+									<option > Steam </option>
+									<option > Air </option>
+								</select>
+							</div>
+							<button class="action" id="configService" disabled=true>
+								<span class="label">Configure</span>
+							</button>
+							<button class="bluebtn nextlevel" id="bt" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+						</div>
+						<div id="service_controlpanel2"  class="controlpanel disp cntrl" >
+							<h4>Level-2</h4>
+							<h4 >Control Panel:</h4>
+							<br />
+							<label For= "Q"  class="Q">Q : </label>
+							<div class="slider slide" id="Slider1"></div>
+							
+							<input type = 'text'  id = 'lpm1'  class="inLpm"/>
+							<label class="lpm" id="unitLbl1">lph</label>
+							<button class="action greenbtn cd" id="cdService">
+								<span class="label">Show C<sub>d</sub></span>
+							</button>
+							<div class="cdVal"  id = 'showCdService'  ></div>
+							<label for='UserInput2' class="user">User Input &Delta;P(mmWC):</label>
+							<input type = 'text' class="userInput"  id = 'UserInput2'   onclick="this.value='';"/>
+							<button id="submitService" class="submit">
+								<span class="label">Submit</span>
+							</button>
+							<button id="plotService1" class="plot1" >
+								<span class="label">Plot</span>
+							</button>
+							<button id="plotService" class="plot" disabled=true>
+								<span class="label">Plot</span>
+							</button>
+							<button class="bluebtn nextlevel" id="bluebtnL-1" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+							<button id="NextSetService" class="nextSet" disabled=true>
+								<span class="label">Next Set of Values</span>
+							</button>
+							<button id="level-3" class="nextlevel" disabled=true>
+								<span class="label">Level-3</span>
+							</button>
+						</div>
+					</div>
+					<!--Tapping level-->
+					<div id="tappingLevel" class="disp">
+						<div id="tapping_controlpanel1"  class="controlpanel cntrl">
+							<h4>Level-3</h4>
+							<label>Configure System:</label>
+							<label class="link" id='link-2'><--Level-2</label>
+							<br />
+							<label>&#946; :</label>
+							<div class="beta"  style="margin-left:15em;"></div>
+							<label style="margin: -2.5em 22.5em;">d :</label>
+							<div class="d" style="margin-left:21em;"></div>
+							<label for = "service" style="margin: -2.5em 28.4em -2.5em 420px; ">Service:</label>
+							<div class="serv" style="margin-left: 485px; margin-right: 464px;"></div>
+							<label for = "serviceForTapping" style="margin: 2.3em 15em"> Taps :</label>
+							<div class="selectBox" style="margin:-3.4em 16.4em">
+								<select id="Tapp">
+									<option >--Select--</option>
+									<option > Corner </option>
+									<option > D and D/2</option>
+								</select>
+							</div>
+							<button class="action" id="configTapp" disabled=true >
+								<span class="label">Configure</span>
+							</button>
+							<button class="bluebtn nextlevel" id="btt" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+						</div>
+						<div id="tapping_controlpanel2"  class="controlpanel cntrl disp" >
+							<h4>Level-3</h4>
+							<h4 >Control Panel:</h4>
+							<br />
+							<label For= "Q"  class="Q">Q : </label>
+							<div class="slider slide" id="Slider2"></div>
+							<input type = 'text'  id = 'lpm2'  class="inLpm"/>
+							<label class="lpm" id="unitLbl2">lpm</label>
+							<button class="action greenbtn cd" id="cdTapping">
+								<span class="label">Show C<sub>d</sub></span>
+							</button>
+							<div class="cdVal"  id = 'showCdTapping'  ></div>
+							<label for='UserInput3' class="user">User Input &Delta;P(mmWC):</label>
+							<input type = 'text'  id = 'UserInput3'  class="userInput" onclick="this.value='';"/>
+							<button id="submitTapping" class="submit">
+								<span class="label">Submit</span>
+							</button>
+							<button id="plotTapping1" class="plot1" >
+								<span class="label">Plot</span>
+							</button>
+							<button id="plotTapping" class="plot" disabled=true>
+								<span class="label">Plot</span>
+							</button>
+							<button class="bluebtn nextlevel" id="bluebtnL-1" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+							<button id="NextSetTapping" class="nextSet" disabled=true>
+								<span class="label">Next Set of Values</span>
+							</button>
+							<button id="level-4" class="nextlevel" disabled=true>
+								<span class="label">Level-4</span>
+							</button>
+						</div>
+					</div>
+					<!--Temperature level-->
+					<div id="temperatureLevel" class="disp">
+						<div id="temperature_controlpanel1"  class="controlpanel cntrl">
+							<h4>Level-4</h4>
+							<label>Configure System:</label>
+							<label class="link" id='link-3'><--Level-3</label>
+							<br />
+							<label style="margin-left: -7em;">&#946; :</label>
+							<div class="beta"  style="float:left;margin:18px -65px;"></div>
+							<label style="margin: -1.1em 23.7em">d :</label>
+							<div class="d"  style="margin:1em 23em"></div>
+							<label for = "TempService" style="margin:2em 8em">Service:</label>
+							<button class="bluebtn nextlevel" id="bt1" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+							<div class="selectBox" style="margin:-3.2em 10.6em;">
+								<select id="TempService">
+									<option>--Select--</option>
+									<option>Steam</option>
+									<option>Air</option>
+								</select>
+							</div>
+							<label for = "Temp" style="margin:-3em 24em">Temperature:</label>
+							<div class="selectBox" style="margin:-3.2em 27.4em;">
+								<select id="Temp"></select>
+							</div>
+							<button class="action" id="configTemp" disabled=true >
+								<span class="label">Configure</span>
+							</button>
+							
+						</div>
+						<div id="temperature_controlpanel2"  class="controlpanel disp cntrl" >
+							<h4>Level-4</h4>
+							<h4 >Control Panel:</h4>
+							<br />
+							<label For= "Q"  class="Q">Q : </label>
+							<div class="slider slide" id="Slider3"></div>
+							<input type = 'text'  id = 'lpm3'  class="inLpm"/>
+							<label class="lpm" id="unitLbl3">lpm</label>
+							<button class="action greenbtn cd" id="cdTemp">
+								<span class="label">Show C<sub>d</sub></span>
+							</button>
+							<div class="cdVal"  id = 'showCdTemp' ></div>
+							<label for='UserInput4' class="user">User Input &Delta;P(mmWC):</label>
+							<input type = 'text'  id = 'UserInput4'  class="userInput" onclick="this.value='';"/>
+							<button id="submitTemp" class="submit">
+								<span class="label">Submit</span>
+							</button>
+							<button id="plotTemp1" class="plot1" >
+								<span class="label">Plot</span>
+							</button>
+							<button id="plotTemp" class="plot" disabled=true>
+								<span class="label">Plot</span>
+							</button>
+							<button class="bluebtn nextlevel" id="bluebtnL-1" onclick="window.location.reload(true)">
+								<span class="label">Reload</span>
+							</button>
+							<button id="NextSetTemp" class="nextSet" disabled=true>
+								<span class="label">Next Set of Values</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class = "primary1">
+				<div id="Confige" style="height:100%; overflow: auto"></div>
+			</section>
+			<section class = "formula">
+				<button class="bluebtn" id="fomulabtn" >
+					<span class="label">Formula</span>
+				</button>
+				<br><br><br><br><br><br>
+				<div>
+				<h3 id="noteHeader" >NOTE</h3>
+				<br><p style="font-family: cursive">The simulation is based on equations as per ISO 5167 standard.
+				Variation in the range limits not considered.</p></div>
+			</section>
+			<hr class = "hr"/>
+			<footer class = "footer"></footer>
+		</article>
+		<script src="../assert/lib/underscore-min.js"></script>
+		<script src="../assert/lib/backbone-min.js"></script>
+		<script src="src/view.js"></script>
+		<script src="src/diagram.js"></script>
+		<script src="src/model.js"></script>
+		<script src="src/collection.js"></script>
+		<script type="text/javascript" src="src/json.js"></script>
+		<script src="src/controller.js"></script>
+	</body>
+</html>

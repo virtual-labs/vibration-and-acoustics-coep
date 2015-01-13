@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Thermocouple</title>
+		<link type="text/css" rel="stylesheet" href="assert/css/chosen.css"/>
+		<link type="text/css" rel="stylesheet" href="assert/css/jquery-ui-1.8.20.custom.css"/>
+		<link type="text/css" rel="stylesheet" href="assert/css/gstyle_buttons.css" />
+		<link rel="stylesheet" href="assert/css/laybio.css" />
+	    <link rel="stylesheet" href="assert/css/model.css" />
+	    <link rel="stylesheet" href="assert/css/laybio.css" />
+		<link type='text/css' href='assert/css/thermocouple.css' rel='stylesheet' />
+		
+		<script type="text/javascript" src="assert/lib/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="assert/lib/raphael-2.1.js"></script>
+		<script type="text/javascript" src="assert/lib/jquery-ui-1.8.20.custom.js"></script>
+		<script type="text/javascript" src="assert/lib/highcharts.js"></script>
+        <script type="text/javascript" src="assert/lib/jquery.simplemodal.js"></script>
+        <script type="text/javascript" src="assert/lib/exporting.js"></script>
+        <script type="text/javascript" src="assert/lib/grid.js"></script>
+        <script type="text/javascript" src="assert/lib/chosen.jquery.min.js"></script>
+        
+		
+		
+		
+	</head>
+<body>
+	<article  class = "main">
+		<header>
+				<span class="a2network">'Sensor Analysis Laboratory'</span>
+					<h2 >Thermocouple</h2>
+		</header>
+		<hr>
+		<section class="container">
+		<div id='static' class='slide'>
+			<div class="diag" id="staticDiagram">
+				<h3 >Level-1 Static Characteristics</h3>
+				<a href='http://instrumentation-central.com/pages/thermocouple_reference_table.htm'  class="link" target="_blank" style="margin: 57em 6em;">Thermocouple Refrence Table</a>
+			</div>
+			<div class="controlPanel" id="controlPanel1" style="float: left">
+				<h3 style="margin: -0.6em 2em;">Control Panel</h3>
+				<br />
+				<label for="Themrocouple" id="Thermocouple">
+                            Thermocouple Type:
+                </label>
+                <div class="selectBox">
+	                <select id="Mselect" style="width: 128px;">
+	                            <option value="Select" >--Select--</option>
+	                            <option value="J">
+	                                J
+	                            </option>
+	                            <option value="K">
+	                                K
+	                            </option>
+	                            <option value="R">
+	                                R
+	                            </option>
+	                            <option value="S">
+	                                S
+	                            </option>
+								<option value="T">
+									T
+	                            </option>
+								<option value="E">
+									E
+	                            </option>
+	                 </select>
+               </div>
+                <br /> <br />
+              <div id="thermo" class="display"></div>
+               <label for="Ref Temp" id="Resistance">
+                            Reference Temp:
+               </label> 
+               <div class="selectBox">
+	               <select id="resistance" style="width: 128px;">
+								<option selected="Select">--Select--</option>
+								<option value=-5>
+									-5
+								</option>
+								<option value=0>
+	                                0
+	                            </option>
+	                            <option value=10>
+	                                10
+	                            </option>
+	                            <option value=20>
+	                                20
+	                            </option>
+	                 </select>  
+                </div> <br /> <br />
+                <div id="showTempRange" class="display"></div>
+                
+               <button  class="action" id="Gettemp"  style="margin:1em 1.8em;float: left;position: relative;" disabled=true><span class="label">Get temperature ==></span></button>
+                        <div id="Temperature">
+                        </div>
+                <br />     
+                 <label for="Temp" id="Rtvalue">
+                            Enter Input value mV:  
+                 </label>
+                  <input type="text" id="Rttext" class="sub" value="Enter your Output" onclick="this.value='';" >
+                       
+                       	
+                      	<button id="NextLevel" value="Level 2" class="sub" style="margin: 1em 3em;"  disabled=true>
+                       		<span class="label">Level 2</span>
+                       	</button>
+                       	
+                       	 <button id="Submit"  disabled='true' value="Submit" class=" sub" style="margin: -3.6em 19.3em;" >
+                       		<span class="label">Submit</span>
+                       	 </button>
+				   		<div class="Buttons">
+                            <button value="Plot" id = "PlotStatic" class="static" style="width:7em;height:2em;" disabled='true'><span class="label">Plot</span></button>
+                            
+                             
+                          
+							<button value="Next" id='nextSet' style="width:7em;margin-left: 2em" disabled='true'><span class="label">Next Set</span></button>
+                            <button value="Reload" class="action bluebtn" id="refresh" style="width:7em;margin-left: 2em" onclick="window.location.reload(true)"><span class="label">Reload</span></button>
+                      </div>
+                             
+               <div id="Static-Output">
+							<label style="margin-top: 10px;">Selected Values:</label> <br />
+                            
+               </div>
+			</div><!--control Panel-->
+		</div>
+			
+			<div id='dynamic' class='slide' style="display: none;">
+			<div class="diag" id="dynamicDiagram" >
+				<h3 style="margin: -36em 2em; float:left">Dynamic Diagram</h3>
+			</div>
+			
+			<div class="controlPanel" id="controlPanel2" style="margin:1.2em 24.5em;">
+				<label class="link"><<-Level-1</label>
+				<label>Bare:</label>
+				
+                    <div style="margin: 1.3em 2em">
+                        <input name="checkbox.1.1" type="checkbox" id = "check1">
+                    </div>
+                   
+                    <label style="margin: 0 1.2em">Thermocouple Type :</label>
+                   
+                    <input type='text' value='' id='T10' />
+					
+				<label>Withsheath:</label>
+				
+				<div  style="margin: 1.3em 2em">
+                        <input name="checkbox.1.2" type="checkbox" id = "check2" disabled="true">
+                </div>
+                
+                <label style="margin: 0 7.2em">Material:</label>
+                
+                <div class="selectBox"  style="margin-top: -1.5em;">
+                <select id="WS1" style=" width: 128px;" disabled="true">
+						<option value="">Select</option>
+                            <option value="SS 304">
+                                SS 304
+                            </option>
+                            <option value="SS 316">
+                                SS 316
+                            </option>
+                            <option value="SS 410">
+                                SS 410
+                            </option>
+						</select>
+				</div>
+				
+				<label style="margin: 2em 7.2em;">Thickness:</label>
+				
+                <div class="selectBox"  style="margin-top: -2.8em;">
+                	<select id="WS2" style=" width: 128px;" disabled="true">
+						<option value="">Select</option>
+                        <option value=0.5>
+                                0.5mm
+                        </option>
+                           
+						<option value=0.75>
+                                0.75mm
+                        </option>
+                        <option value=1.0>
+                                1.0mm
+                            </option>
+						</select>
+				</div>    <br />
+				
+				<label>Thermowell:</label> 
+				
+				<div style="margin: 5.3em 2em">
+                        <input name="checkbox.1.3" type="checkbox" id="check3" disabled="true">
+                </div>  
+                
+                <label style="margin: -5em 7.2em;">Material:</label>
+                
+                <div class="selectBox"  style="margin-top: -4.5em;">
+                	<select id="T1" style=" width: 128px;" disabled="true">
+						<option value="">Select</option>
+                            <option value="SS 304">
+                                SS 304
+                            </option>
+                            <option value="SS 316">
+                                SS 316
+                            </option>
+                            <option value="SS 410">
+                                SS 410
+                            </option>
+                        </select>
+				</div>
+				
+				<label style="margin: -1em 7.2em;">Thickness:</label>
+				 <div class="selectBox"  style="margin-top: -1.5em;">
+                	<select id="T2" style=" width: 128px;"  disabled="true">
+						<option value="">Select</option>
+                            <option value=1.0>
+                                1.0mm
+                            </option>
+                            <option value=1.5>
+                                1.5mm
+                            </option>
+                            <option value=2.0>
+                                2.0mm
+                            </option>
+                        </select>
+				</div>
+				
+				<label style="margin: 2em 4.2em;">Filling Material:</label>
+				<div class="selectBox"  style="margin-top: -2.9em;">
+                	<select id="T3" style=" width: 128px;" disabled="true">
+						<option value="">Select</option>
+                            <option>
+                               MgO powder
+                            </option>
+                            <option>
+                                Silicon Compound
+                            </option>
+                        </select>
+				</div>
+					<button id ="Plotd" value="Plot" style="margin: 1em 5em; float: left; width:7em; height:2em" disabled='true'><span class="label"> Plot</span> </button>
+					
+					<div id="dynamic-modal-content">
+                               <div id="dynamic-modal-title">Temperature vs Time</div>
+                                    <div class="close">
+                                         <a href="#" class="simplemodal-close">x</a>
+                                     </div>
+                              <div id="dynamic-modal-data">
+                                  <div id="jxgbox_dynamic" class="jxgbox" style="width:770px; height:500px;z-index: 999999;"></div>
+                                     <p>
+                                     <button class="simplemodal-close action redbtn">
+                                        <span class="label">Close</span>
+                                     </button>
+                                      <span>(or press ESC or click the overlay)</span>
+                                     </p>
+                               </div>
+                          </div>
+                           
+					<button id ="Reloadd" class="bluebtn" value="Reload" style="margin: -3.7em 18em; float: left; width:7em; height:2em"  onclick="window.location.reload(true)"><span class="label">Reload</span> </button><br />
+				
+				<label style="margin:-1em 0.2em;">Output:</label>
+				<div id="Dynamic-Output" >
+                            
+                </div>
+                 
+                
+			</div>
+			</div>
+		     <!--dynamic-->
+		</section>
+		<section class = "primary1" >
+		</section>
+		<section class = "formula"></section>
+			<hr class = "hr"/>
+			<footer class = "footer">
+			</footer>
+	</article>
+<script src="assert/lib/underscore-min.js"></script>
+<script src="assert/lib/backbone-min.js"></script>
+<script type="text/javascript" src="src/view.js"></script>
+<script type="text/javascript" src="src/model.js"></script>
+<script type="text/javascript" src="src/collection.js"></script>
+<script type="text/javascript" src="src/controller.js"></script>
+
+</body>	
+</html>

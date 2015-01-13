@@ -1,0 +1,259 @@
+ 
+
+.disp {
+	display: none;
+}
+
+select{
+	width:138px !important;
+}
+#Dynamic-Output {
+	border: 1px solid #B2B5B6;
+	height: 9.7em;
+	margin: 3em 0;
+	overflow: scroll;
+	width: 22.3em;
+}
+#Reloadd {
+	margin: -4.1em 11em;
+}
+#jxgbox_dynamic{
+	width:770px; 
+	height:500px;
+	z-index: 999999;
+}
+h3 {
+	font-family: myFirstFont;
+	line-height: 51px;
+	font-weight: bold;
+	color: #19292E;
+	margin: -26.5em 2em;
+	text-decoration: underline;
+	position: absolute;
+}
+.h3{
+	margin: -36em 1em; 
+	float:left;
+}
+.h3Control{
+	margin: -0.6em 2em;
+}
+
+.for {
+	margin: 1em 11em;
+	position: relative;
+	width: auto;
+}
+#staticDiagram {
+	float: left;
+	height: 41.8em;
+	margin: 0 0.5em;
+	width: 24.8em;
+}
+
+.submit {
+	margin: -4.6em 23.6em;
+}
+.plot {
+	margin: 2em 2em;
+}
+.next {
+	float: left;
+	margin: 2em 2.1em;
+	text-align: center;
+}
+.controlPanel {
+	border: 1px solid #EDEDED;
+	border-radius: 5px 5px 5px 5px;
+	height: 39.8em;
+	margin: 1.2em 25.5em;
+	position: absolute;
+	width: 22.5em;
+}
+#Temperature {
+	color: #5F9EA0;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 14px;
+	height: 1.5em;
+	letter-spacing: 0.03em;
+	margin: -2.6em 14.5em;
+	width: 7em;
+}
+
+#container {
+	margin: 2em 1em;
+	overflow: hidden;
+	position: absolute;
+	width: 51em;
+}
+
+.slide {
+	float: left;
+	height: 41em;
+	overflow: hidden;
+	width: 51em;
+}
+
+.diag {//
+	border: 1px solid black;
+	height: 41.8em;
+	margin: 0 0.5em;
+	width: 24.8em;
+	float: left;
+}
+#control {
+	height: 38em;
+	margin: -38em 22em;
+	width: 23em;
+}
+
+#WS {
+	left: -1em;
+	top: 0;
+	position: relative;
+}
+#T10 {
+	height: 2em;
+    left: 0.5em;
+    position: relative;
+    top: -0.4em;
+    width: 10.5em;
+}
+.slct{
+	margin-top: -1.5em !important;
+}
+.lab1{
+	margin:-1em 0 0 7.2em
+}
+#WS1 {
+	left: 12em;
+	position: relative;
+	top: 1em;
+	width: 60px;
+}
+#WS2 {
+
+	left: 2em;
+	position: relative;
+	top: 3.6em;
+	width: 60px;
+}
+#T1 {
+	left: 11em;
+	position: relative;
+	top: 6em;
+	width: 60px;
+}
+
+#T2 {
+	font-size: 13px;
+	left: 19px;
+	position: relative;
+	top: 125px;
+	width: 60px;
+}
+
+#T3 {
+	left: 18em;
+	position: relative;
+	top: 10em;
+	width: 60px;
+}
+#Plotd {
+	float: left;
+    height: 2em;
+    margin: -4em 21em;
+    width: 6em;
+}
+.nextLevel {
+	margin: -3.9em 20.1em;
+}
+#Static-Output {
+	border: 1px solid #B2B5B6;
+	height: 10.3em;
+	margin: 1em 0;
+	overflow: auto;
+	width: 22.5em;
+	float: left;
+}
+#Button1 {
+	margin: 1.2em 2.2em;
+}
+#plot {
+	margin: 19em 2em;
+}
+#Gettemp {
+	float: left;
+	margin: 1em 1.8em;
+	position: relative;
+}
+.alpha{
+	margin: 3.3em 5.5em;
+}
+#controlPanel2{
+	margin:1.2em 24.5em;
+}
+.checkBox1{
+	margin: 1.3em 2em;
+}
+.lab{
+	margin: 0 0 0 7.2em;
+}
+#Alpha, #Range {
+/*	border: 1px solid black;*/
+	height: 1.5em;
+	color: black;
+	font-family: myFirstFont;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	margin: -2.7em 5.5em;
+	width: 17em;
+	display: inline-block;
+}
+.text {
+	display: inline-block;
+	float: none;
+	line-height: 2.2em;
+	margin: -1em 2em 0em 2em;
+	padding: 4px;
+}
+.selectBox {
+	float: left;
+	margin: -2.5em 10.5em;
+}
+button {//
+	width: 12em;//
+	height: 2.8em;
+	margin-top: 0.5em;
+}
+@font-face{
+	font-family:myFirstFont;
+	src: url('DroidSerif-Regular.ttf'); /* IE9 */
+}
+label {
+	color: #464E52;
+	float: left;
+	font-family: myFirstFont;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	margin: 1.5em;
+}
+.sub {
+	float: left;
+	height: 2em;
+	margin: -3.3em 14em;
+	width: 10em;
+}
+
+.link {
+	color: #3788AC;
+	cursor: pointer;
+	float: left;
+	line-height: 1;
+	margin:-1em 0 0 20em;
+}
+.link:hover {
+	text-decoration: underline;
+}

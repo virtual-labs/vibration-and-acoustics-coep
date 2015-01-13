@@ -1,0 +1,127 @@
+#T10 {
+	height: 2em;
+    left: -0.4em;
+    position: relative;
+    top: -0.4em;
+    width: 68px;
+}
+h3{
+	font-family: myFirstFont;
+	line-height: 51px;
+	font-weight: bold;
+	color: #19292E;
+	margin: -25em 2em;
+	text-decoration:underline;
+	//position: absolute;
+}
+.slide {
+	float: left;
+	height: 50em;
+	overflow: hidden;
+	width: 51em;
+}
+.diag{
+    //border: 1px solid black;
+    height: 41.8em;
+    margin: 0 0.5em;
+    width: 24.8em;
+    float:left;
+}
+.controlPanel{
+	border: 1px solid #EDEDED;
+    border-radius: 5px 5px 5px 5px;
+    height: 39.8em;
+    margin: 1.2em 25.5em;
+    position: absolute;
+    width: 22.5em;
+}
+
+.link{
+   color: #3788AC;
+    cursor: pointer;
+    line-height: 1;
+    margin:0em -12em;
+    opacity: 0.8;
+    position: absolute;
+    text-decoration: none;
+}
+
+.link:hover{
+	text-decoration:underline;
+	opacity:1;
+}
+label {
+	color: #464E52;
+    float: left;
+    font-family: myFirstFont;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    margin: 1.5em;
+}
+.selectBox {
+    float: left;
+    margin: -2.7em 10.5em;
+    
+}
+.display{
+	//border: 1px solid black;
+    height: 1.5em;
+    color: #5F9EA0;
+    font-family: myFirstFont;
+     font-size: 14px;
+	letter-spacing: 0.03em;
+    margin: 1em 1.5em;
+    width: 17em;
+    display:inline-block;
+}
+#Temperature{
+	
+    color: #5F9EA0;
+    font-family: myFirstFont;
+    font-size: 14px;
+    height: 1.5em;
+    letter-spacing: 0.03em;
+    margin: -2.6em 14.5em;
+    width: 7em;
+    float:left;
+}
+.sub{
+	
+	float: left;
+    height: 2em;
+    margin: -3em 14em;
+    width: 10em;
+    
+}
+.Buttons {
+    height: auto;
+    margin: 6em 2em;
+    width: auto;
+}
+#Static-Output{
+	border: 1px solid #B2B5B6;
+    height: 10em;
+    margin: 1em 0;
+    overflow: scroll;
+    width: 22.5em;
+    float:left;
+}
+.text{
+	  display: inline-block;
+	  float: none;
+    line-height: 2.2em;
+    margin: -1em 1em;
+   
+}
+#Dynamic-Output{
+	border: 1px solid #B2B5B6;
+    height: 9.5em;
+    margin: 0 0;
+    overflow: scroll;
+    width: 22em;
+   }
+ @font-face{
+font-family: myFirstFont;
+src: url('DroidSerif-Regular.ttf'); /* IE9 */
+}

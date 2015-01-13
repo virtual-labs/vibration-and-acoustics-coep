@@ -1,0 +1,234 @@
+*{
+margin:0;
+padding:0;
+}
+#fomulabtn{
+	margin: 1em 11em;
+    position: relative;
+}
+body{
+	position: relative;
+	z-index: 20;
+}
+
+.wrap{
+	height:38.7em;
+	width:23em;
+	margin: 1.7em 24.3em;;
+	//box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+	//border:1px solid black;
+	
+	border-radius: 3px 3px;
+	background-color: #EDEDED; 
+}
+.head{
+	//background-color:#9F9F9F ;
+	display: inline-block;
+	//background-color:#E0E0E0 ;
+	height: 3em;
+	margin-left:1.5em;
+    position: absolute;
+    width: 19em;
+   // border-radius:3px 3px;
+    //border:1px solid #F3F2F2;
+	border-top-right-radius:3px;
+	border-top-left-radius:3px;
+	border-bottom: 1px solid #B3B3B3;
+}
+.h4{
+	color: #847F7F;
+    font-family: myFirstFont;
+    font-size: 15pt;
+    font-weight: normal;
+    text-align: center;
+    padding:  15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #E1E1E1;
+}
+.overlap{
+	background-color: #FCFCFC;
+    height: 29em;
+    margin: 0.5em 0.5em;
+    position: absolute;
+    width: 22em;
+    border-radius: 3px 3px;
+  display:none;
+}
+#up{
+	background: inherit;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    height: 11em;
+    margin: -0.4em 1em;
+  	border:1px solid #EDEDED;
+    width: 20em;
+    z-index: 35;
+}
+.lower {
+    height: 14.1em;
+    margin: -1em 0;
+    width: 22em;
+}
+.experiment {
+    height: 29em;
+    margin: 0.5em 0.5em;
+    float:left;
+	background-color:#FCFCFC;
+	border-radius: 3px 3px;
+    width: 22em;
+}
+.blockDiag{
+	position:absolute;
+   border-radius: 3px 3px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    background-color:#FCFCFC;
+     height: 8em;
+    margin: 30.1em 0.5em;
+    width: 22em;
+    
+  //float:left;
+  }
+@font-face
+{
+font-family: myFirstFont;
+src: url('DroidSerif-Regular.ttf'); /* IE9 */
+}
+.diagram1{
+//border: 1px solid red;
+   height: 41.5em;
+    margin: 0.3em -1em;
+    width: 24.8em;
+    float:left;
+    //position:absolute;
+}
+h3:hover{
+color:#6C7679;
+}
+h3{
+	color: #A8A8A8;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 1.3em;
+    margin: -0.5em 1em;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+fieldset{
+	border:transparent;
+	width:22em;
+	height:15em;
+}
+#selectBox1{
+	position: relative;
+	z-index: 10;
+}
+.selectBox {
+    float: left;
+    margin: -2.6em 10.5em;
+}
+#configure{
+	margin:3em 10em;
+}
+.link{
+   color: #3788AC;
+    cursor: pointer;
+    float: left;
+    line-height: 1;
+    margin: 1em;
+}
+.link:hover{
+	text-decoration:underline;
+}
+label {
+	color: #464E52;
+    font-family: myFirstFont;
+    line-height: 0px;
+    margin: 1.28em 1.5em;
+    float:left;
+    font-size: 14px;
+	letter-spacing: 0.03em;
+	line-height: 1;
+}
+select {
+	width: 130px;
+}
+.r2 {
+	margin-left: 0.8em;
+	float: left;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin:1em;
+}
+.span {
+	border-radius:1px 1px 1px 1px;
+	border: 1px solid #C5C5C5;
+	box-shadow: 0 0 3px #AAAAAA;
+    color: #404C4F;
+    float:left;
+    font: 76.25%/3em arial,helvetica,sans-serif;
+    height: 1.8em;
+    //letter-spacing: 0.1em;
+    margin:  -3.5em 14.5em;
+    padding-bottom: 9px;
+    padding-top: -3px;
+    width: 128px;
+}
+.levelBox {
+	float: left;
+    margin: -2.8em 10.4em;
+}
+.textbox {
+    box-shadow: 0 0 3px #AAAAAA;
+    float: left;
+    height: 2.3em;
+    margin: -3.5em 13.4em;
+    width: 9.5em;
+}
+.micro {
+    margin: -2.5em 22.1em;
+}
+.sub {
+    float: left;
+    margin-top: 0.4em;
+    margin-left: 2.9em;
+    width: 60px;
+}
+.Capgraph{
+	float: left;
+    margin-left: 2.9em;
+    margin-top: 1.9em;
+}
+.Currentgraph {
+    float: left;
+    margin-left: 17.9em;
+    margin-top: -3.1em;
+   }
+.featured{
+	color: #747474;
+	margin-top:-0.5em ;
+	position:relative;
+}
+.service{
+	color: #747474;
+	position:absolute;
+    font-family: myFirstFont;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    letter-spacing:0.03em;
+    font-size: 14px;
+	line-height: 0;
+   margin: 8.5em -9.5em;
+}
+.serviceval{
+	color: #747474;
+	position:absolute;
+    font-family: myFirstFont;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    letter-spacing:0.03em;
+    font-size: 14px;
+	line-height: 1;
+  	margin: 8em -0.7em;
+}

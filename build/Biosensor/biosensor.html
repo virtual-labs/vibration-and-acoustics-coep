@@ -1,0 +1,144 @@
+<!DOCTYPE html5>
+<html lang = "en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<title> Bio Sensor </title>
+		<link rel="stylesheet" href="../assert/css/layout1.css" />
+		<link type="text/css" href="assert/css/bio-sensor.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../assert/css/chosen.css" />
+		<link rel="stylesheet" href="../assert/css/gstyle_buttons.css" />
+		<link rel="stylesheet" href="../assert/css/jquery-ui-1.8.20.custom.css">
+		<script src="../assert/lib/jquery-1.6.2.min.js"></script>
+		<script src="../assert/lib/raphael.js"></script>
+		<script src="../assert/lib/jquery-ui-1.8.20.custom.js"></script>
+		<script src="../assert/lib/chosen.jquery.min.js"></script>
+		<script type="text/javascript" src="assert/lib/jquery.jclock-1.2.0.js"></script>
+		<script type="text/javascript" src="assert/lib/jquery.spriteTimer-1.3.6.js"></script>
+	</head>
+	<body>
+		<article  class = "main">
+			<header>
+				<span class="a2network">Sensor Analysis Laboratory</span>
+				<h2 >Bio-Sensor</h2>
+			</header>
+			<div class = "logo">
+				<div class = "circle">
+					<img class="logo-img" src="../assert/images/coep_logo.png"/>
+				</div>
+			</div>
+			<hr>
+			<section class="container4">
+				<h3>Level-1 Calibration</h3>
+				<br>
+				<div id="level-1" >
+					<div id = "display_counter"  class="display"></div>
+					<div class="calibre" id = "diagramContainerOne">
+						<div id="showSpeed" style="display: none">
+							<div id="systemMsg" style="width:8em; height:2em;margin:-1.5em 8em; float:right"></div>
+						</div>
+					</div>
+					<br />
+					<div class="rotation">
+						<h4>Select Speed of Rotation</h4>
+						<label style="float: left;margin:3em -1em;">Speed (rpm):</label>
+						<div class="selectBox">
+							<select id="speed" value="0" style="width: 126px">
+								<option> --Select Speed-- </option>
+								<option value="0.5"> 0.5 </option>
+								<option value="1"> 1 </option>
+								<option value="2"> 2 </option>
+							</select>
+						</div>
+						<button id="startRotation" class="action rotate" disabled=true>
+							<span class="label">Start Rotation</span>
+						</button>
+						<div class="jclock" id ="clock"></div>
+						<br />
+						<br />
+						<button id="restart" class="action" style="margin: 1em 28em" disabled=true>
+							<span class="label">Restart</span>
+						</button>
+						<label style="margin:-3em 12.5em"> Seconds:</label>
+						<div class="timer">
+							<div id="seconds" disabled="disabled" style="width: 2.5em; height: 1.5em;margin:-2.8em 45em; float: left"></div>
+						</div>
+						<button class="action bluebtn" style="left:44.1em;top:9.4em;position: absolute" onclick="window.location.reload(true)">
+							<span class="label">Reload</span>
+						</button>
+						<button id="measurement" class="action" style="position:absolute;top:9.1em;left:69em" disabled=true>
+							<span class="label"> Level-2 </span>
+						</button>
+					</div>
+				</div>
+				<div id="level-2" style="display: none;">
+					<label class="link" id="link-1"><--Level-1</label>
+					<div id = "display_counter_two" class="display" style="top: 10.6em;"></div>
+					<div class="calibre" id = "diagramContainerTwo"></div>
+					<br />
+					<div class="rotation">
+						<h4>Select Age to see Heart Beat range</h4>
+						<label style="float: left;margin:3em -1em;">Age :</label>
+						<div class="selectBox">
+							<select id="age"  style="width: 126px">
+								<option value="0"> --Select Age-- </option>
+								<option value="1"> New Born </option>
+								<option value="2"> 1 - 12 Months </option>
+								<option value="3"> 1 - 2 Years </option>
+								<option value="4"> 2 - 6 Years </option>
+								<option value="5"> 6 - 12 Years </option>
+								<option value="6"> 12 Years - Adult </option>
+								<option value="7"> Adult Athletes </option>
+							</select>
+						</div>
+						<br />
+						<button id="showRange" class="action " disabled="true" style="margin: 1.3em 2em; float: left">
+							<span class="label">Show Range in this Group</span>
+						</button>
+						<button class="action bluebtn" style="margin: 1.3em 2em; float: left" onclick="window.location.reload(true)">
+							<span class="label">Reload</span>
+						</button>
+						<br />
+						<br />
+						<div id="showHeartBeat" class="show"></div>
+						<button id="showError" class="action "  style="margin:3em 4.7em; float: right" disabled="true">
+							<span class="label">Level-3</span>
+						</button>
+					</div>
+				</div>
+				<div id="level-3" style="display: none;">
+					<label class="link" id="link-2" ><--Level-2</label>
+					<div id = "display_counter_three" class="display" style="top: 10.6em;"></div>
+					<div class="calibre" id = "diagramContainerThree">
+						<div id = "big_area"></div>
+					</div>
+					<br />
+					<div class="rotation">
+						<h4>Select Error to see Difference in BPM</h4>
+						<label style="float: left;margin:3em -1em;">Error :</label>
+						<div class="selectBox">
+							<select id="error"  style="width: 126px">
+								<option value="0"> --Select Error-- </option>
+								<option value="1"> Effect of Misalignment </option>
+								<option value="2"> Effect Of Stray Light </option>
+							</select>
+						</div>
+						<div id="selectedRange" class="show" style="margin: 6.5em 23em;"></div>
+						<br />
+						<div id="alignment" class="show" style="margin: 1em 34em; width:10em "></div>
+						<button class="action bluebtn" style="margin: 8.3em 2em; float: right" onclick="window.location.reload(true)">
+							<span class="label">Reload</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class = "primary1"></section>
+			<section class = "formula1"></section>
+			<hr class = "hr"/>
+		</article>
+		<script src="../assert/lib/underscore-min.js"></script>
+		<script src="../assert/lib/backbone-min.js"></script>
+		<script type="text/javascript" src="src/view.js"></script>
+		<script type="text/javascript" src="src/model.js"></script>
+		<script type="text/javascript" src="src/controller.js"></script>
+	</body>
+</html>

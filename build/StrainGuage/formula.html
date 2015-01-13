@@ -1,0 +1,77 @@
+<html>
+<body>
+
+ dR =  GF * dL/L * R <br>
+ New resistance of strain Gauge :   Rg = R+ dR<br><br>
+ 			
+			
+ Output voltage in Quarter Bridge  :  e =  1/4 * (dR/R) * E<br>
+           
+ Output voltage in Half Bridge  :   e =  1/2 * (dR/R) * E<br>
+		  
+ Output voltage in Full Bridge  :   e =  (dR/R) * E<br><br>
+ 
+Where,
+R = Resistance of Strain Gauge <br>
+E = Voltage applied <br>
+Strain dL/L = M/(Z*YM)  <br>
+Where, Z = 1/6 * b* h<sup>2</sup><br>
+And M = W.L<br>
+Where, M= Bending movment <br>
+W = applied weight(NEWTON)<br>
+L = distance from load point to sg center(in meters)<br>
+b = width of the cantilever (in meters)<br>
+h = thickness of cantilever (in meters)<br>
+Consider L = 16 cm<br /> 
+b = 2cm<br>
+	    h = 4mm= 0.4 cm<br>
+YM = Young's Modulus of Strain guage material<br>
+GF = Gauge Factor <br>
+Default value 2.0<br><br>
+<b>For effect of change in position of weight applied:</b><br>
+Initial length L = 16cm <br>
+For change in position we reduce distance between load point and strain gauge center.<br>
+Calculate new strain for different distances as selected in position tab.<br><br>
+
+<b>For Temperature Effect:</b><br>
+	dL/L = alpha/ GF + (&beta;s- &beta;g) <br>		
+	alpha = Temperature coefficient of Resistance depends on material <br>
+	&beta;s = linear expansion coefficient of cantilever material	 <br>
+	SS304 is selected for cantilever material for which  &beta;s =0.0000117 / <sup>0</sup>C <br>
+	&beta;g = linear  expansion coefficient of strain gauge material  <br>
+	Reference temperature : 20 <sup>0</sup>C <br> <br>
+
+	
+	<table border="2">
+		<tr><td><b>Sr No</b></td><td><b>Material</b></td><td><b>Young's Modulus</b></td><td><b>Linear Expansion coefficient (&beta;g)</b></td><td><b>&alpha; values</b></td>
+		</tr>
+		
+		<tr>
+			<td>1</td><td>Copper</td><td>17,000,000(psi)</td><td>16.7x 10 -6 per degree c</td><td>0.004041  per degree c</td>
+		</tr>
+		<tr>
+			<td>2</td><td>Constantan</td><td>162, 000,000(psi)</td><td>14.97x 10 -6 per degree c</td><td>-0.000074 per degree c</td>
+		</tr>
+		<tr>
+			<td>3</td><td>Annealed Constantan</td><td>162, 000,000(psi)</td><td>14.97x 10 -6 per degree c</td><td>-0.000074 per degree c</td>
+		</tr>
+		<tr>
+			<td>4</td><td>Isoelastic</td><td>20,000,000(psi)</td><td>450 x 10 -6 per degree c</td><td>0.000145 per degree c</td>
+		</tr>
+		<tr>
+			<td>5</td><td>Tungsten</td><td>58,000,000(psi)</td><td>4.5x 10 -6 per degree c</td><td>0.0045 per degree c</td>
+		</tr>
+		<tr>
+			<td>6</td><td>Titanium</td><td>15,000,000(psi)</td><td>8.5x 10 -6 per degree c</td><td>0.0013 per degree c</td>
+		</tr>
+		<tr>
+			<td>7</td><td>Karma Alloy</td><td>162, 000,000(psi)</td><td>14.97x 10 -6 per degree c</td><td>-0.000074 per degree c</td>
+		</tr>
+	</table><br>
+	<i style="color: red"> 1 psi =6894.76 Pa.<br>
+	1 kg=9.81 NEWTON</i><br><br>
+	<b>All Calculations are done in S.I</b>
+	
+	
+</body>
+</html>

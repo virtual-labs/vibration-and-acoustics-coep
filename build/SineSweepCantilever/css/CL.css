@@ -1,0 +1,211 @@
+*{
+	margin:0;
+	padding:0;
+}
+#tabs{
+	height: 700px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+	width:1335px;
+}
+#tabs-1{
+	overflow: hidden;
+}
+#fieldset1  {
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	margin-bottom: 1px;
+	padding-bottom: 2px;
+	border:none;
+}
+#fieldset2  {
+	padding-bottom: 2px;
+	border: none;
+}
+#fieldset3  {
+	padding-bottom: 2px;
+	border: none;
+}
+#fieldset1 legend{
+	margin-bottom: 0px;
+	margin-left: 0px;
+	text-align:center;
+	text-shadow: 0 1px 1px #C0D576;
+}
+#fieldset1 p {
+	
+}
+
+#fieldset1 label{
+    margin-left: 33px;
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+}
+#fieldset2 p {
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 0px 2px;
+	margin-bottom: 1px;
+}
+#fieldset2 label{
+	margin-bottom: 3px;
+    margin-left: 17px;
+    margin-right: 5px;
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+}
+#fieldset2 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    font: normal 15px Georgia,"Times New Roman",Times,serif;
+    margin-bottom: 4px;
+    margin-left: 14px;
+    margin-right: -1px;
+    outline: medium none;
+    padding: 5px;
+	width: 110px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#fieldset1 button{
+	margin-left: 122px;
+}
+#fieldset2 select{
+	width: 150px;
+	font: italic 15px Georgia,"Times New Roman",Times,serif;
+	margin-bottom: 4px;
+	border: medium none;
+    border-radius: 3px 3px 3px 3px;
+	margin-left: -7px;
+	padding: 4px;
+	width: 120px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#fieldset1 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    font: italic 15px Georgia,"Times New Roman",Times,serif;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 1px;
+    outline: medium none;
+    padding: 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#fieldset3 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	font: italic 15px Georgia,"Times New Roman",Times,serif;
+	margin: 7px 5px 6px 9px;
+	outline: medium none;
+	padding: 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#fieldset3 label{
+    margin-left: 17px;
+    margin-right: 14px;
+	font: bold 14px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+}
+#fieldset3 p {
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 0px 2px;
+	margin-bottom: 1px;
+}
+#diagram{
+	width:900px;
+	height:550px;
+}
+#controlpane{
+	margin-left: 900px;
+    margin-top: -535px;
+    position: absolute;
+    width: 435px;
+}
+#ctrLab{
+	position:absolute;
+	left:6px;
+	top:-12px;
+	color:blue;
+}
+#analyzerUp{
+	height: 200px;
+    top: 194px;
+    width: 333px;	
+    left: 546px;
+    overflow: auto;
+    position: absolute;
+}
+#analyzerDown{
+	height: 216px;
+    left: 545px;
+    overflow: auto;
+    position: absolute;
+    top: 395px;
+    width: 333px;
+    margin-top: 8px;
+}
+#textArea{
+	margin-left: 10px;
+	margin-top: -1207px;
+}
+#Showf{
+	float: right;
+    margin-right: 29px;
+    margin-top: -76px;
+}
+#showList{
+	background-color: #65E4FF;
+    border: 6px outset royalblue;
+    height: 172px;
+    left: 380px;
+    position: absolute;
+    top: 200px;
+    width: 267px;
+}
+#naturalButton{
+	float: right;
+    margin-right: 4px;
+    margin-top: -115px;
+ }
+
+		
