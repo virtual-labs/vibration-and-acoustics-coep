@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background : url("bgtry.png");
+}
+
+#canvas_container {
+	width: 300px;
+	margin-top: -30px;
+}
+
+a {
+	color: #333;
+	text-decoration: none
+}
+
+a:hover {
+	color: #ccc;
+	text-decoration: none
+}
+
+
+
+#tabs {
+	box-shadow: 0 0 10px #000;
+	height: 788px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 831px;
+}
+
+
+
+#close {
+	float: right;
+	margin-top: 0px;
+}
+
+#mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+	background-color: #000;
+	display: none;
+}
+
+#boxes .window {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 640px;
+	display: none;
+	z-index: 9999;
+	padding: 10px;
+}
+
+#boxes #dialog {
+	width: 500px;
+	height: 500px;
+	
+	background-color: #ffffff;
+}
+
+#boxes #dialog2 {
+	background-color: #ffffff;
+	width: 450px;
+	height: 300px;
+}
+
+.imag {
+	float: none;
+    margin-left: 134px;
+    text-align: center;
+}
+
+.imag1 {
+	float: right;
+}
+
+#span{
+	border-bottom: 1px solid #A9A9A9;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    width: 275px;
+}
+
+#spanBtn{
+	margin-right: 31px;
+}
+
+#tabs-1{
+	height: 565px;
+}
+
+#newFormula{
+	margin-left: 100px;
+    text-align: center;
+}
+
+.closeOne{
+	left: 210px;
+    position: absolute;
+    top: 520px;
+}
+
+.closeTwo{
+	left: 170px;
+    margin-right: 0;
+    position: absolute;
+    top: 278px;
+}

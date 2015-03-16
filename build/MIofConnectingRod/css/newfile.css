@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+#tabs{
+	height: 675px;
+	left: 0;
+	top: 0;
+}
+#box1{
+	position:absolute;
+	left:0px;
+	top:144px;
+	width:1322px;
+	height:520px;
+	border:2px solid gray;
+}
+#fieldset1{
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	margin-bottom: 5px;
+	padding-bottom: 9px;
+	 margin-top: 18px;
+	border:none;
+}
+#fieldset1 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	font: 15px Georgia,"Times New Roman",Times,serif;
+	margin-bottom: 0px;
+	padding: 5px;
+	width: 120px;
+	margin-top:5px;
+}
+#fieldset1 label{
+	margin-left: 15px;
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 3px;
+}
+.place_label{
+	margin-left: 10px;
+}
+.textfield_set{
+}
+#fieldset2 {
+	background: #b9cf6a;
+	background:  rgba(23, 150, 230, 0.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 16px;
+	list-style: none;
+	border:none;
+	font-size: 14px;
+	padding-bottom: 102px;
+}
+#diagram{
+}
+#fieldset2 input{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 3px 3px 3px 3px;
+	font: 15px Georgia,"Times New Roman",Times,serif;
+	margin: 0px 5px 0 10px;
+	padding: 5px;
+	width: 120px;
+}
+#calculation{
+	left: 738px;
+	position: absolute;
+	top: 145px;
+	width: 519px;
+}
+
+#fieldset2 button{
+	margin-left:10px;
+}
+#textbox1{
+	margin-left:10px;
+}
+#textbox2{
+	margin-left: 124px;
+}	
+ 

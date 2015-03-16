@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Trifiliar Suspension - Mechanical</title>
+		<link type="text/css" href="css/trifiliar.css" rel="stylesheet" />	
+		<link type="text/css" href="css/gstyle_buttons.css" rel="stylesheet" />	
+		<link type="text/css" href="../css/jquery-ui-1.8.13.custom.css" rel="stylesheet"/>
+		<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="js/raphael.js"></script>
+		<link type="text/css" href="../css/common.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../lib/jquery-ui-1.8.13.custom.min.js"></script>
+		<script type="text/javascript" src="js/trifiliar.js"></script>
+		<script type="text/javascript" src="js/trifiliarraphael.js"></script>
+		
+		<script type="text/javascript">
+				$(function(){
+				$('#tabs').tabs();
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); }, 
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+			});
+		</script>
+	</head>
+	<body>
+	<div id="tabs">
+			<ul>
+			<div class = "imag">
+				<img src="../images/coep_logo_sim.png">
+				<!--<a href="../../../logout.htm" ><img id="logout" src="../../images/logout.png"></a>-->
+			</div>
+			<h3 align="left" class="headStyle" style="margin-top:47px">Trifiliar Suspension</h3>
+			</ul>
+			<div id="trifil">
+				<div id ="diagram">
+					<div id ="picture">
+					<div id="oscil">0</div>
+					<div id="timer">00:00 s</div>
+					<div id="period">&nbsp;&nbsp;0 s</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id ="calculation">
+				<fieldset id = "fieldset1">
+					<label for = "textbox1">Mass Of The Disc, m<sub>0:</sub></label>
+					<input type="text" value="" id="textbox1" readonly="readonly" /><span class="input_label">kg</span><br/>
+					<label for ="textbox2">Mass Of The Body, m:</label>
+					<input type="text" value="" id="textbox2" readonly="readonly" /><span class="input_label">kg</span><br/>
+					<label for = "textbox3">Radius of the disc, r:</label>
+					<input type="text" value="" id="textbox3" readonly="readonly" /><span class="input_label">m</span><br/>
+					<label id = "length">Length of the arm, a:</label>
+					<input type="text" value="" id="textbox4"  readonly="readonly" /><span class ="input_label">m</span><br/>
+					<label id ="wire">Length of the wire, l:</label>
+					<input type="text" value="" id="textbox5" readonly="readonly"/><span class="input_label">m</span><br/>
+					<label id = "inertia">Moment of Inertia Of Disc,J<sub>0:</sub></label>
+					<input type="text" value="" id="textbox6"  readonly="readonly" /><span class="input_label">Kg.m<sup>2</sup></span>
+					<div id="Jo"></div>
+					<button class="action greenbtn" id="button1" onclick="clickTrial1()" style ="font:bold 11px/17px Helvetica,Arial,sans-serif"/><span class= "label">Calculate</span></button>
+					<button class = "action redbtn" id="reload" style = "font:bold 11px/17px Helvetica,Arial,sans-serif"><span class= "label">Reload</span></button>
+				</fieldset>
+			</div>
+			<div id ="button_set">
+				<fieldset id = "fieldset2">
+					<label for = "button2" style="margin-left:20px;">Perform The Experiment By Clicking On  Following Buttons In Sequence.</label>
+					<button class = "action" id="button2" onclick="clickTrial2()" disabled="disabled" style ="font:bold 11px/17px Helvetica,Arial,sans-serif"/><span class= "label">Place The Body On The Disc</span></button>
+					<button class="action" id="button3" onclick="clickTrial3()" disabled="disabled" style ="font:bold 11px/17px Helvetica,Arial,sans-serif"/><span class= "label">Align Center Of Mass Of The Body With Center Of The Disc</span></button>
+					<button class="action" id="button4" onclick="rotatediskFirst()" disabled="disabled" style ="font:bold 11px/17px Helvetica,Arial,sans-serif"/><span class= "label">Give The Disc a Small Angular Movement About Vertical Axis</span></button>
+					<button class= "action" id="button5" onclick="clickTrial5()" disabled="disabled" style ="font:bold 11px/17px Helvetica,Arial,sans-serif"/><span class= "label">Calculate The Mass Moment Of Inertia Of The Body, J</span></button>
+					<input type="text" value="" id="textbox7"  readonly="readonly" />
+					<div id="J"></div>
+					<div id="JoFormula">J<sub>0</sub> = (1/2)m<sub>o</sub>r<sup>2</sup></div>
+					<div id="JFormula">J = (gT<sup>2</sup>a<sup>2</sup>(m+m<sub>0</sub>) / 4&pi;<sup>2</sup>l)-J<sub>0</sub></div>
+					
+				</fieldset>
+			</div>
+			<div style="position:absolute; top: 687px;width: 1344px;left:1px;"> 
+    
+			<div class="art-footer" style="width: 99.9%;">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body">
+                    <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+					 <!--<a href="./../../../feedback.htm" class="art-rss-feedback-icon" title="RSS"></a>-->
+                       <div class="art-footer-text art-footer-psr">
+                                <p><a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a></p><p>Copyright &#169;2011.COEP Virtual Lab.</p>
+                                                            </div>
+                    <div class="cleared"></div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+		</div>
+		</div>	
+
+	</body>
+</html>

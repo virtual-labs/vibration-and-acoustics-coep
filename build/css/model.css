@@ -1,0 +1,33 @@
+#cap-modal-content, #cap-modal-data {display:none;}
+
+/* Overlay */
+#cap-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#cap-container {background-color:#eee; color:#000; font: 16px/24px "Lucida Grande",Arial,sans-serif; padding-bottom:4px; width:600px; -moz-border-radius-bottomleft:6px; -webkit-border-bottom-left-radius:6px; -moz-border-radius-bottomright:6px; -webkit-border-bottom-right-radius:6px; border-radius:0 0 6px 6px; -moz-box-shadow:0 0 64px #000; -webkit-box-shadow:0 0 64px #000; box-shadow:0 0 64px #000;}
+#cap-container a {color:#ddd;}
+#cap-container #cap-modal-title {color:#000; background-color:#ddd; border-bottom:1px solid #ccc; font-weight:bold; padding:6px 8px; text-shadow:0 1px 0 #f4f4f4;}
+#cap-container .close {display:none; position:absolute; right:0; top:0;}
+#cap-container .close a {display:block; color:#777; font-weight:bold; padding:6px 12px 0; text-decoration:none; text-shadow:0 1px 0 #f4f4f4;}
+#cap-container .close a:hover {color:#000;}
+#cap-container #cap-modal-data {font-size:12px; padding:6px 12px;}
+#cap-container h2 {margin:10px 0 6px;}
+#cap-container p {margin-bottom:10px;}
+#cap-container span {color:#777;}
+
+#cur-modal-content, #cur-modal-data {display:none;}
+
+/* Overlay */
+#cur-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#cur-container {background-color:#eee; color:#000; font: 16px/24px "Lucida Grande",Arial,sans-serif; padding-bottom:4px; width:600px; -moz-border-radius-bottomleft:6px; -webkit-border-bottom-left-radius:6px; -moz-border-radius-bottomright:6px; -webkit-border-bottom-right-radius:6px; border-radius:0 0 6px 6px; -moz-box-shadow:0 0 64px #000; -webkit-box-shadow:0 0 64px #000; box-shadow:0 0 64px #000;}
+#cur-container a {color:#ddd;}
+#cur-container #cur-modal-title {color:#000; background-color:#ddd; border-bottom:1px solid #ccc; font-weight:bold; padding:6px 8px; text-shadow:0 1px 0 #f4f4f4;}
+#cur-container .close {display:none; position:absolute; right:0; top:0;}
+#cur-container .close a {display:block; color:#777; font-weight:bold; padding:6px 12px 0; text-decoration:none; text-shadow:0 1px 0 #f4f4f4;}
+#cur-container .close a:hover {color:#000;}
+#cur-container #cur-modal-data {font-size:12px; padding:6px 12px;}
+#cur-container h2 {margin:10px 0 6px;}
+#cur-container p {margin-bottom:10px;}
+#cur-container span {color:#777;}

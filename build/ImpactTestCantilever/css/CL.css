@@ -1,0 +1,117 @@
+
+		#tabs
+			{position:absolute;left:0px;top:0px;width:1342px;height:1008px;}
+		
+		#tabs-1	
+			{position:absolute;left:4px;top:160px;width:1335px;height:791px;border:2px solid gray;}
+		#diagram
+			{position:absolute;left:1px;top:1px;width:900px;height:544px;border:2px solid gray;}
+			
+		#controlpane
+			{position:absolute;left:906px;top:1px;width:424px;height:544px;border:2px solid gray;}
+		#ctrLab	
+			{position:absolute;left:6px;top:-12px;color:blue;}
+		fieldset
+			{position:absolute;left:6px;top:35px;width:390px;height:70px;border:1px solid gray;}
+		legend
+			{border:1px solid #CCCCCC;color:#330033;}
+		
+		#widthT
+			{position:absolute;left:4px;top:35px;}
+		#heightT
+			{position:absolute;left:104px;top:35px;}
+		#lengthT
+			{position:absolute;left:204px;top:35px;}
+		#widthL
+			{position:absolute;left:10px;top:64px;}
+		#heightL
+			{position:absolute;left:110px;top:64px;}
+		#lengthL
+			{position:absolute;left:210px;top:64px;}
+		#calculat
+			{position:absolute;left:310px;top:35px;}
+		 button
+			{  color: white;background-color: #0066CC;}
+		#areaFormula
+			{  color: white;background-color: #339966;}
+		#inertiaFormula
+			{  color: white;background-color: #339966;}
+		#hitH
+			{  width:230px; font-size:20px;color: white;background-color:#CC66FF;}
+		#area
+			{position:absolute;left:6px;top:130px;width:410px;height:30px;}
+		#areaL
+			{position:absolute;left:6px;top:5px;}
+		#areaT
+			{position:absolute;left:160px;top:3px;}
+		#areaB
+			{position:absolute;left:329px;top:1px;}		
+		#inertia
+			{position:absolute;left:6px;top:170px;width:410px;height:30px;}
+		#inertiaL
+			{position:absolute;left:6px;top:5px;}
+		#inertiaT
+			{position:absolute;left:160px;top:3px;}
+		#inertiaB
+			{position:absolute;left:329px;top:1px;}	
+		#material
+			{position:absolute;left:6px;top:210px;width:410px;height:30px;}
+		#materialL
+			{position:absolute;left:6px;top:5px;}
+		#materialT
+			{position:absolute;left:160px;top:3px;}
+		#density
+			{position:absolute;left:6px;top:250px;width:410px;height:30px;}
+		#densityL
+			{position:absolute;left:6px;top:5px;}
+		#densityT
+			{position:absolute;left:160px;top:3px;}
+		#young
+			{position:absolute;left:6px;top:290px;width:410px;height:30px;}
+		#youngL
+			{position:absolute;left:6px;top:5px;}
+		#youngT
+			{position:absolute;left:160px;top:3px;}
+		#disp
+			{position:absolute;left:6px;top:335px;width:410px;height:20px;color:#0066CC;}/*border:1px solid gray;}*/
+		#hit
+			{position:absolute;left:6px;top:370px;width:410px;height:30px;}
+		#hitB
+			{position:absolute;left:6px;top:0px;}
+		#node
+			{position:absolute;left:250px;top:2px;}
+		#FRFD
+			{position:absolute;left:6px;top:420px;width:410px;height:50px;}
+		#FRFB
+			{position:absolute;left:10px;top:0px;width:50px;}
+		#resetB
+			{position:absolute;left:130px;top:0px;width:50px;}
+		#FRF
+			{  width:120px; color: white;background-color: #330033;}
+		#reset
+			{  width:100px; color: white;background-color: #330033;}
+		#errormsg
+			{position:absolute;left:6px;top:480px;width:410px;height:60px;color:red;}
+		#analyzerUp
+			{position:absolute;left:540px;top:43px;width:342px;height:230px;overflow:auto;}
+		#analyzerDown
+			{position:absolute;left:540px;top:276px;width:342px;height:230px;overflow:auto;}
+		#underExtra
+			{position:absolute;left:1px;top:550px;width:1329px;height:236px;border:2px solid gray;}
+		#underLabel
+			{position:absolute;left:1px;top:10px;width:1320px;height:20px;color:#006600;font-size:14px;}
+		#naturalButton
+			{ position:absolute;left:400px;top:30px;width:80px;height:30px; color: white;background-color: #330066;}
+		#textArea
+			{position:absolute;left:20px;top:450px;width:429px;height:86px;}
+		#tArea
+			{position:absolute;left:10px;top:30px;width:199px;height:46px;}
+		#textVal
+			{position:absolute;left:2px;;height:35px; top: -49px;width: 489px;}
+		#fn1
+			{position:absolute;left:450px;top:70px;width:420px;height:30px;}
+		#fn2
+			{position:absolute;left:450px;top:130px;width:420px;height:30px;}
+		#fn3
+			{position:absolute;left:450px;top:190px;width:420px;height:30px;}
+		

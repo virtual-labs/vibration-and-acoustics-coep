@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Response Of SDOF System To Arbitrary Excitation</title>
+		<link type="text/css" href="../css/jquery-ui-1.8.13.custom.css" rel="stylesheet"/>
+		<link type="text/css" href="../css/common.css" rel="stylesheet"/>
+		<link type="text/css" href="css/AE.css" rel="stylesheet"/>
+		<link type="text/css" rel="stylesheet" href="css/jsxGraph.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../lib/jquery-ui-1.8.13.custom.min.js"></script>
+		<script type="text/javascript" src="js/raphael.js"></script>
+		<script type="text/javascript" src="js/Calculations.js"></script>
+		<script type="text/javascript" src="js/ArbitraryRaphael.js"></script>
+		<script type="text/javascript" src="../lib/jsxgraphcore.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//Tabs
+				$('#tabs').tabs();
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(function() {
+					$(this).addClass('ui-state-hover');
+				}, function() {
+					$(this).removeClass('ui-state-hover');
+				});
+				diagram();
+				createGraph();
+			});
+
+		</script>
+	</head>
+	<body style="position: absolute;">
+		<div id="tabs">
+			<ul>
+				<div class = "imag1">
+					<img src="../images/coep_logo_sim.png">
+				</div>
+				<h3 align="left" class="headStyle" style="margin-top:47px;">Response Of SDOF System To Arbitrary Excitation</h3>
+			</ul>
+			<div></div>
+			<div id="uservalues" style="height: 450px; width: 210px;">
+				<fieldset id = "fs1">
+					<legend align= "center">
+						Control Panel
+					</legend>
+					<p style=" margin-top: 10px;">
+						<label for = "m"> <font size="2">Mass, M</font> </label>
+						<input type="text" size="16" id="m" placeholder="from 50 to 100">
+						kg
+					</p>
+					<p style=" margin-top: 10px;">
+						<label for = "k"> <font size="2">Stiffness, K</font> </label>
+						<input type="text" size="16" id="k" placeholder="20000 to 100000 ">
+						N/m
+					</p>
+					<p style=" margin-top: 10px; height: 67px;">
+						<button class = "action redbtn"  onClick="calcCc()" id="Ccval" >
+							<span class= "label">Click here for Cc</span>
+						</button>
+						<input type="text" disabled="disabled" size="16" id="cc" style="height: 18px;  margin-top: 6px;"/>
+						N.s/m
+					</p>
+					<p style=" margin-top: 10px;">
+						<label for = "c"> <font size="2">Damping Coeff, C</font> </label>
+						<input type="text" size="16" id="c" placeholder="1000 to 2500">
+						N.s/m
+					</p>
+					<p style=" margin-top: 10px;">
+						<label for = "f"> <font size="2">Velocity , V</font> </label>
+						<input type="text"  size="16" id="v" value="25" disabled="true" style="color: black;">
+						Km/h
+					</p>
+					<p style=" margin-top: 10px; height: 65px;">
+						<button class = "action redbtn"  onClick="calculateOmegaN()" id="omegan" >
+							<span class= "label">Click here for &omega;<sub>n</sub></span>
+						</button>
+						<input type="text" size="16" id="omeganVal" value ="" disabled="true"/>
+						rad/s
+					</p>
+				</fieldset>
+			</div>
+			<div id="FormulaDiv" style="height: 50px; margin-top: 30px; width: 230px;">
+				<button class = "action greenbtn" id="Showf" style = "font:14px/17px Comic Sans MS,Arial,sans-serif; width: 137px; margin-top: 17px;">
+					<span class= "label">GET FORMULA</span>
+				</button>
+				<button class = "action greenbtn" id="reload" style = "font:14px/17px Comic Sans MS,Arial,sans-serif; width: 85px;">
+					<span class= "label">Reload</span>
+				</button>
+			</div>
+			<div id="diagram"></div>
+			<div id="graph" class="jxgbox"></div>
+			<div id="playDiv" >
+				<p id="selectShape" style=" margin-top: 5px;">
+					<label>Select the shape :</label>
+					<select id="shape" >
+						<option> Select </option>
+						<option> Step </option>
+						<!-- 						<option> Hump </option> -->
+					</select>
+				</p>
+				<p style="   margin-left: -92px; margin-top: -62px;">
+					<label>Height H :</label>
+					<input type="text" size="16" id="stepHeight" placeholder=" 0.1 to 0.75" />
+					m
+				</p>
+				<input type="image" id="play" src="css/images/play_button.jpg"  title="Play Animation" onclick="calculate();">
+			</div>
+			<div id="Formula1" title="Please check values" ></div>
+			<div id="Formula" title="Formula" ></div>
+			<!--  <div id="slidebottom" class="slide">
+			<input type="button" value="slide it"></input>
+			<div class="inner">Slide from bottom</div>
+			</div> -->
+			<div class="art-footer2">
+				<div class="art-footer-t2"></div>
+				<div class="art-footer-l"></div>
+				<div class="art-footer-b2"></div>
+				<div class="art-footer-r"></div>
+				<div class="art-footer-body2">
+					<a href="#" class="art-rss-tag-icon" title="RSS"></a>
+					<div class="art-footer-text">
+						<p>
+							<a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a>
+						</p>
+						<p>
+							Copyright &#169;2011.COEP Virtual Lab.
+						</p>
+					</div>
+					<div class="cleared"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
