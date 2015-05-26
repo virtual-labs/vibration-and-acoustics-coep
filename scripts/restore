@@ -1,8 +1,11 @@
 #!/bin/bash
-# Restore Script for Computer Programming Lab
+# Restore Script for Vibration and Acoustics Lab
 
-# Restore Script restores the backup of the database used by the lab.
-# Since there is no database being used for Computer Programming Lab, 
+# Restore Script restores the backup of the data used by the lab.
+# Since there is no data being used by Vibration and Acoustics Lab, 
 # the script does nothing. 
 
-echo "There is no database used for the lab."
+# Usage of the script
+
+# To use restore script, run the command
+# ./scripts/restore
