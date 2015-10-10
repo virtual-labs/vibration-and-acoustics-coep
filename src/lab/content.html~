@@ -10,7 +10,7 @@ edit -->
 <html lang="en">
 
 <head>
-  <title>Sensor Lab</title>
+  <title>Vibration and Acoustics</title>
 </head>
 
 <body>
@@ -25,13 +25,13 @@ edit -->
     <div id="lab-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="images/logo.jpg" />
+      <img src="images/logo.png" />
     </div>
 
     <div id="lab-header-heading" class="heading">
     <!-- Write the name of your lab and link it to the home page
     of your lab. -->
-      <a href="index.html">Sensor Lab</a>	
+      <a href="index.html">Vibration and Acoustics</a>	
     </div>
 
     <!-- Add any additional element or link you want to add to 
@@ -54,7 +54,7 @@ edit -->
       <!-- You can add a welcome message or title of the 
       experiment enclosed in h1 tag here -->
       <div id="lab-article-heading" class="heading">
-        Welcome to Sensor Lab!
+        Welcome to Vibration and Acoustics!
       </div>
 
       <!-- Add any additional element if required with proper 
@@ -82,7 +82,7 @@ edit -->
       <section id="lab-article-section-1">
         <div id="lab-article-section-1-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/introduction.jpg" />
+	  <img src="images/introduction.png" />
 	</div>
 
 
@@ -111,7 +111,7 @@ edit -->
         
         <div id="lab-article-section-2-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/simulation.jpg" />
+	  <img src="images/content_4.png" />
 	</div>
 
 
@@ -128,7 +128,19 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Rtd/index.html">RTD</a> 
+	      <a href="MIofConnectingRod/index.html">MI of Connecting Rod</a> 
+	    </li>
+	  
+	  
+            <li> 
+	      <!--Link and name of the experiment 1 -->
+	      <a href="ImpactTestCantilever/index.html">Impact test on cantilever Modal analysis</a> 
+	    </li>
+	 
+	  
+            <li> 
+	      <!--Link and name of the experiment 1 -->
+	      <a href="SineSweepCantilever/index.html">Sine Sweep of base excitation of cantilever</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -137,25 +149,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Biosensor/index.html">BioSensor</a> 
-	    </li>
-	  </ul>
-	</div>
- <div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
-            <li> 
-	      <!--Link and name of the experiment 1 -->
-	      <a href="Capacitance/index.html">Capacitance</a> 
-	    </li>
-	  </ul>
-	</div>
- <div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
-            <li> 
-	      <!--Link and name of the experiment 1 -->
-	      <a href="LinearVariableDifferntialTransformer/index.html">LinearVariableDifferntialTransformer</a> 
+	      <a href="HarmonicExcitationSDOF/index.html">Forced response of SDOF</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -165,7 +159,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="MeasurementOfConductivity/index.html">MeasurementOfConductivity</a> 
+	      <a href="NaturalVibrationSDOF/index.html">Free response of SDOF</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -174,7 +168,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Orifice/index.html">Orifice</a> 
+	      <a href="TrifiliarSuspension/index.html">Trifiliar Suspension</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -183,7 +177,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="PHCalculation/index.html">PHCalculation</a> 
+	      <a href="ArbitraryExcitation/index.html">SDOF System - Arbitrary Excitation</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -192,19 +186,11 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="StrainGuage/index.html">StrainGuage</a> 
+	      <a href="TunedVibrationAbsorber/index.html">Tuned Vibration Absorber</a> 
 	    </li>
 	  </ul>
 	</div>
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
-            <li> 
-	      <!--Link and name of the experiment 1 -->
-	      <a href="Thermocouple/index.html">Thermocouple</a> 
-	    </li>
-	  </ul>
-	</div>
+
       </section>
       </div>	
 
