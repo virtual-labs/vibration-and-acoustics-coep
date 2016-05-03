@@ -1,0 +1,33 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : @,12, 5555555555555555.abc@23
+
+* Objective
+  - To Simulate the “Forced response of SDOF” experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vibration-and-acoustics-coep/blob/master/test-cases/integration_test-cases/Forced response of SDOF/Forced response of SDOF_01_Usability_smk.org][Forced response of SDOF_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Simulation link 
+  2. It should re-direct to the Simulation page
+  3. Click on the link"Click here for Simulator" present in the simulator page.
+  4. Enter the invalid values in mass and stiffness fields and click on Cc button
+
+* Expected result
+  1. Simulation page should be opened
+  2. Content should be present with no distortions and Junk character
+  3. A new tab should be opened with the Simulation Process.
+  4. An error message should be displayed on the screen as to enter the mass and stiffness values
+
+* Review/comments
+
+

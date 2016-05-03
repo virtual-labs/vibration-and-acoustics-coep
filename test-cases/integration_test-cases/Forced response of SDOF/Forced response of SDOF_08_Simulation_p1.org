@@ -1,0 +1,37 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : node2
+
+* Objective
+  - To Simulate the “Forced response of SDOF” experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vibration-and-acoustics-coep/blob/master/test-cases/integration_test-cases/Forced response of SDOF/Forced response of SDOF_01_Usability_smk.org][Forced response of SDOF_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Simulation link 
+  2. It should re-direct to the Simulation page
+  3. Click on the link"Click here for Simulator" present in the simulator page.
+  4. Enter the valid values in mass and stiffness fields and click on Cc button
+  5. Enter the valid values in Damping coeffisient and Force Amplitude and click on run button
+  6. Click on Get formula button and the click on reload button
+
+* Expected result
+  1. Simulation page should be opened
+  2. Content should be present with no distortions and Junk character
+  3. A new tab should be opened with the Simulation Process.
+  4. When we click on the Cc button , the value of Cc should be displayed on the screen.
+  5. when we click on the run button , the pendulum starts swinging and the corresponding graph should be displayed on the screen.
+  6. All the values on the screen should be removed.
+
+* Review/comments
+
+

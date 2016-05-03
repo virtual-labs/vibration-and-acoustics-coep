@@ -1,0 +1,39 @@
+* Author: Nihanth
+* Date Created: 02 May 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Data : node2
+
+* Objective
+  - To Simulate the “SDOF System - Arbitrary Excitation” experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/vibration-and-acoustics-coep/blob/master/test-cases/integration_test-cases/SDOF System - Arbitrary Excitation/SDOF System - Arbitrary Excitation_01_Usability_smk.org][SDOF System - Arbitrary Excitation_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Simulation link 
+  2. It should re-direct to the Simulation page
+  3. Click on the link"Click here for Simulator" present in the simulator page.
+  4. Enter the values of mass and stiffness Click on the Cc button 
+  5. Enter the values of Damping co-efficient and velocity and click on the wn button
+  6. Click on the Formula button and then select the type and give the height value click on the run button
+  7. Click on the reload button.
+
+* Expected result
+  1. Simulation page should be opened
+  2. Content should be present with no distortions and Junk character
+  3. A new tab should be opened with the Simulation Process.
+  4. When we click on the Cc button , the value of Cc should be displayed on the screen.
+  5. When we click on the wn button , the value of wn should be displayed on the screen.
+  6. The formula should be displayed on the screen and the corresponding graph should be displayed when we click on the run button.
+  7. All the values on the screen should be removed.
+
+* Review/comments
+
+
