@@ -1,0 +1,84 @@
+#+title: Requirement/Workflow for Vibration and Acoustics Lab 
+#+Author: Integration Team
+#+Date: [2016-06-28]
+
+This document contains the basic work flow and requirement for Vibration and acoustics.Testing should happen against all the requirements mentioned in this document by integration team.
+
+* Lab wise requirements
+
+Main page Should contain following tabs for Vibration and acoustics Lab with the content related to the introduction.
+
+** Introduction
+
+Content should display on page related to the introduction of Vibration and acoustics Lab.
+
+** List of experiments
+
+List of experiment related to Vibration and acoustics Lab should display on page.
+
+* Experiment wise requirements
+
+** MI of Connecting Rod
+
+It should contain the Aim, Theory,Procedure,Audio/Video,Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:User needs to click on "Trial" buttons only,it will cause simulator run at left side and display some values.On clicking on rest of buttons they should display the respective values."Reload" button should reload the page.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Impact test on cantilever Modal analysis
+
+It should contain the Aim, Theory,Procedure,Audio/Video,Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator: Here user needs to give some input values and click on calculate button.It should display some values.Then select "Node" and press "Hit the hammer" button it should run the simulator (Hammer).Graphs should be display respectively."Observe FRF" and "Reset" button should work properly."Formula" button should display the respective formulas.
+
+ 
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Sine Sweep of base excitation of cantilever
+
+It should contain the Aim, Theory,Procedure,Audio/Video, Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user needs to give some input values and click on calculate button.It should display some values.."Vibrate" and "Reset" button should work properly and it should run the simulator."Formula" button should display the respective formulas."Calculate frequency" button should display respective value.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Forced response of SDOF
+
+It should contain the Aim, Theory,Procedure,Audio/Video,Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user needs to enter some input values and click on some buttons, It should display some values. "Run" button should run the simulation and create graph for respective readings."Get formula" and "Reset" button should work properly.
+ 
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Free response of SDOF
+
+It should contain the Aim, Theory,Procedure,Audio/Video,Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user needs to enter some input values and click on some buttons, It should display some values. "Run" button should run the simulation and create graph for respective readings."Get formula" and "Reset" button should work properly.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Trifiliar Suspension
+
+It should contain the Aim, Theory,Procedure,Audio/Video,Review Questions and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user only needs to click on the buttons and observe the simulation.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** SDOF System - Arbitrary Excitation
+
+It should contain the Aim,Pretest,Theory,Procedure,Audio/Video,Post test,Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user needs to enter some input values and click on some buttons,It should display some values. "Run" button should run the simulation and create graph for respective readings."Get formula" and "Reload" button should work properly.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Tuned Vibration Absorber
+
+It should contain the Aim,Pretest,Theory,Procedure,Audio/Video,Post test, Review Questions,Reference,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Simulator:Here user needs to enter some input values and click on Run button,It should run the simulation and display some  values."Reload" button should work properly.
+  
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
