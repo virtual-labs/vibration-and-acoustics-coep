@@ -16,11 +16,3 @@ green-icon:
 clean:
 	rm -rf ${build-dir}
 
-
-
-
-
-
-
-
-
